@@ -28,3 +28,30 @@ function findingNemo(array) {
 
 //where n is the no of inputs
 findingNemo(large); //--> O(n) --> linear
+
+
+
+
+
+//BIG O also depends on number of inputs
+
+const boxes1 = ['box1','box2','box3','box4','box5','box6','box7'];
+const boxes2 = ['box8','box9','box10','box11','box12','box13','box14'];
+
+
+function compareTwoBoxes (boxes1, boxes2) {
+
+	forEach (const box of boxes1) {
+		console.log(box);
+	}
+
+	// boxes1.forEach( function(boxes1) {
+	// 	console.log(boxes1);
+	// });
+
+	boxes2.forEach( function(boxes2) {
+		console.log(boxes2);
+	});
+}
+
+compareTwoBoxes(boxes1, boxes2); // --> O(a+b) coz of 2 inputs
