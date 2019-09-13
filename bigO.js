@@ -1,5 +1,6 @@
-//finding Nemo
+/****-----     O(n)     -----*****/
 
+//finding Nemo
 //1 item in array
 const nemo = ['nemo'];
 
@@ -25,16 +26,14 @@ function findingNemo(array) {
 }
 
 //changing length of array changes the performance time
-
 //where n is the no of inputs
 findingNemo(large); //--> O(n) --> linear
 
 
 
-
+/****-----     O(a+b)     -----*****/
 
 //BIG O also depends on number of inputs
-
 const boxes1 = ['box1','box2','box3','box4','box5','box6','box7'];
 const boxes2 = ['box8','box9','box10','box11','box12','box13','box14'];
 
@@ -53,5 +52,21 @@ function compareTwoBoxes (boxes1, boxes2) {
 		console.log(boxes2);
 	});
 }
-
 compareTwoBoxes(boxes1, boxes2); // --> O(a+b) coz of 2 inputs
+
+
+
+
+/****-----     O(n^2)     -----*****/
+
+const alphabets = ['a','b','c','d','e'];
+
+function logAllPairsOfArray(array) {
+	for(let i=0; i<array.length; i++) {
+		for(let j=0; j<array.length; j++) {
+				console.log(array[i], array[j]);
+		}
+	}
+}
+
+logAllPairsOfArray(alphabets);
