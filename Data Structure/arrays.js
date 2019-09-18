@@ -5,6 +5,9 @@ strings(2);
 //Operations in array
 
 //1. Push
+//we can use append or push functions it may sometimes have time complexity of O(n),
+// since arrays are allocated dynamically in JS, it copies the array to a totally different location occupying double space
+//and looping over the items of an array to copy to another location which is a O(n)
 strings.push('e'); // --> O(1)
 
 //2. Pop
